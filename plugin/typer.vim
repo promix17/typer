@@ -23,6 +23,7 @@ function! TyperLoop(file)
 			redraw
 		endwhile
 		execute "normal! Go"
+		execute "normal! GS"
 		call cursor(line('.')+1, 1)
 		let line_count += 1
 		if line_count > g:typer_zz_count
